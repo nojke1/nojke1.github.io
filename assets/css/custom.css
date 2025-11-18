@@ -1,0 +1,352 @@
+/* Pakeičiam šriftų šeimą visai svetainei */
+body {
+    font-family: 'Roboto', sans-serif; /* Galite pasirinkti ir kitą šriftą, pvz., 'Open Sans', 'Lora' ir kt. */
+    line-height: 1.6; /* Pagerina eilutės aukštį, kad tekstas būtų lengviau skaitomas */
+    color: #333; /* Tamsiai pilka spalva tekstui */
+    background-color: #ffffff; /* Baltas fonas */
+}
+
+/* H1 antraštė */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; /* Didelis šriftas */
+    font-weight: 700; /* Storas šriftas */
+    color: #2c3e50; /* Tamsiai mėlyna spalva */
+    line-height: 1.2;
+    letter-spacing: 1px; /* Tarpas tarp raidžių */
+    margin-bottom: 20px; /* Tarpas po antrašte */
+}
+/* H2 antraštė */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #34495e; /* Pilkšvai mėlyna spalva */
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
+
+/* H3 antraštė */
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #16a085; /* Žalia spalva */
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+/* H4 antraštė */
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #f39c12; /* Oranžinė spalva */
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    margin-bottom: 14px;
+}
+
+/* H5 antraštė */
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #e74c3c; /* Raudona spalva */
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    margin-bottom: 12px;
+}
+
+/* H6 antraštė */
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #8e44ad; /* Tamsiai violetinė */
+    line-height: 1.6;
+    letter-spacing: 0.1px;
+    margin-bottom: 10px;
+}
+
+/* Pastraipų stilius */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Vidutinio dydžio šriftas */
+    font-weight: 400;
+    color: #666; /* Šviesiai pilka spalva */
+    line-height: 1.8; /* Eilutės aukštis, kad tekstas būtų lengviau skaitomas */
+    margin-bottom: 15px; /* Tarpas tarp pastraipų */
+    text-align: justify; /* Tekstas išlygintas */
+}
+
+/* Pagrindiniai mygtukai */
+button, .btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #3498db; /* Mėlyna spalva */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Apvalinti kampai */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s; /* Sklandus fonų keitimas ir šiek tiek animacijos, kai paspaudžiamas */
+}
+
+/* Mygtuko paspaudimo pseudoklasė */
+button:hover, .btn:hover {
+    background-color: #2980b9; /* Tamsesnė mėlyna spalva */
+}
+
+/* Mygtuko paspaudimo pseudoklasė (aktyvus mygtukas) */
+button:active, .btn:active {
+    transform: scale(0.95); /* Mažiname mygtuką, kad parodytume paspaudimo efektą */
+    background-color: #21618c; /* Dar tamsesnė mėlyna spalva */
+}
+
+/* Mygtuko nepaspaudus (focus) efektas */
+button:focus, .btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(52, 152, 219, 0.7); /* Lengvas šviesos spindesys aplink mygtuką */
+}
+
+/* Pagrindinės nuorodos */
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3498db; /* Mėlyna spalva */
+    text-decoration: none; /* Pašaliname pabraukimą */
+    transition: color 0.3s, text-decoration 0.3s; /* Sklandus spalvos ir pabraukimo pokytis */
+}
+
+/* Nuorodos perėjimas su pelės žymekliu */
+a:hover {
+    color: #2980b9; /* Tamsesnė mėlyna spalva */
+    text-decoration: underline; /* Pabraukti nuorodą */
+}
+
+/* Nuorodos "focus" efektas (kai ją pasirenka klaviatūra) */
+a:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(52, 152, 219, 0.7); /* Panašus efektas kaip ir mygtuko */
+}
+
+/* Bendros taisyklės mygtukams ir nuorodoms */
+button, .btn, a {
+    transition: all 0.3s ease; /* Sklandus visų efektų pokytis */
+}
+
+/* Pagrindiniai mygtukai su tamsia spalva */
+button, .btn {
+    background-color: #2ecc71; /* Žalia spalva */
+    color: white;
+    border-radius: 6px; /* Apvalūs kampai */
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* Mygtuko hover efektas */
+button:hover, .btn:hover {
+    background-color: #27ae60; /* Tamsesnė žalia */
+}
+
+/* Mygtuko paspaudimas */
+button:active, .btn:active {
+    background-color: #1e8449; /* Dar tamsesnė žalia */
+    transform: scale(0.98); /* Šiek tiek suspausti mygtuką */
+}
+
+/* Bendrieji nustatymai tarp sekcijų */
+section {
+    padding: 40px 20px; /* Vidiniai atstumai (Padding) tarp turinio ir sekcijos kraštų */
+    margin-bottom: 40px; /* Apatinis atstumas tarp sekcijų */
+}
+
+/* Apie sekcija */
+#about {
+    padding: 40px 20px; /* Atstumai nuo kraštų */
+    margin-bottom: 40px;
+}
+
+/* Reziumė sekcija */
+#resume {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+/* Portfolio sekcija */
+#portfolio {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+/* Norėdami sumažinti tarpą tarp elementų, galime nustatyti bendrą klasę */
+section .content {
+    margin-bottom: 20px; /* Vidiniai elementų atstumai */
+}
+
+/* Jei norite padaryti didesnį atstumą tarp pirmo ir antro lygio elementų */
+section h2, section h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Pavyzdžiui, nuotraukos ir tekstai */
+section img {
+    margin-bottom: 20px; /* Atstumas tarp nuotraukų ir kitų elementų */
+}
+
+/* Bendras sekcijų dizainas su kraštinėmis, užapvalintais kampais ir šešėliais */
+section {
+    background-color: #fff; /* Baltas fonas sekcijoms */
+    border: 1px solid #e0e0e0; /* Šviesi pilka kraštinė */
+    border-radius: 10px; /* Užapvalinti kampai */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Šešėlis, kad išskirtų sekciją */
+}
+
+/* Apie sekcija */
+#about {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Kiek tamsesnis šešėlis */
+}
+
+/* Reziumė sekcija */
+#resume {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio sekcija */
+#portfolio {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Patobulinimai turinio blokams, pavyzdžiui, su tekstais ir nuotraukomis */
+section .content {
+    background-color: #f9f9f9; /* Šviesiai pilkas fonas turinio blokams */
+    padding: 20px;
+    border-radius: 8px; /* Užapvalinti kampai */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* Švelnus šešėlis */
+}
+
+/* Jei turite įdėtą informaciją, pvz., korteles ar kitas informacines dėžutes */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd; /* Plona šviesi kraštinė */
+    border-radius: 8px; /* Užapvalinti kampai */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Lengvas šešėlis */
+    transition: transform 0.3s ease; /* Animacija */
+}
+
+/* Kortelėms, kai jas užveda pelės žymeklis */
+.card:hover {
+    transform: translateY(-5px); /* Pakyla, kai užveda pelės žymeklį */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Tamsesnis šešėlis */
+}
+
+/* Nuotraukoms ir tekstams */
+section img {
+    display: block; /* Nuotraukos tampa bloku */
+    max-width: 100%; /* Nuotraukos pločio ribojimas */
+    height: auto; /* Išlaikyti proporcijas */
+    border-radius: 8px; /* Užapvalinti kampai nuotraukoms */
+    margin-bottom: 20px;
+}
+
+/* Tekstų išdėstymas */
+section p {
+    line-height: 1.8; /* Pagerintas eilutės aukštis, kad tekstas būtų lengviau skaitomas */
+    color: #555; /* Šviesiai pilka spalva tekstui */
+    margin-bottom: 20px; /* Tarpas tarp pastraipų */
+}
+
+/* Antraštės stilius sekcijose */
+section h2, section h3 {
+    color: #333; /* Tamsiai pilka spalva */
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Navigacijos juosta */
+nav {
+    background-color: #2c3e50; /* Tamsiai mėlyna fonas */
+    padding: 15px 30px; /* Vidiniai atstumai */
+    border-radius: 8px; /* Užapvalinti kampai */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Švelnus šešėlis */
+    position: sticky; /* Navigacija lieka ekrane pasukus */
+    top: 0; /* Laikykite viršuje */
+    z-index: 1000; /* Užtikriname, kad juosta būtų virš kitų komponentų */
+}
+
+/* Navigacijos nuorodos */
+nav a {
+    color: white; /* Baltos spalvos tekstas */
+    font-size: 1.1rem; /* Vidutinio dydžio šriftas */
+    margin-right: 20px; /* Tarpai tarp nuorodų */
+    text-decoration: none; /* Pašalinti pabraukimą */
+    transition: color 0.3s ease, transform 0.3s ease; /* Sklandūs perėjimai */
+}
+
+/* Navigacijos nuorodų perėjimas su pelės žymekliu */
+nav a:hover {
+    color: #ecf0f1; /* Šviesiai pilka spalva */
+    transform: translateY(-2px); /* Pakėlimo efektas */
+}
+
+/* Paskutinės nuorodos nebesiūlome dešinėje */
+nav a:last-child {
+    margin-right: 0;
+}
+
+/* Įspėjimo juosta */
+.alert {
+    padding: 15px 25px;
+    margin: 20px 0;
+    border-radius: 8px; /* Užapvalinti kampai */
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Švelnus šešėlis */
+}
+
+/* Įspėjimo juostos sėkmės žinutė (žalia spalva) */
+.alert-success {
+    background-color: #2ecc71; /* Žalia spalva */
+    color: white;
+}
+
+/* Įspėjimo juostos klaidos žinutė (raudona spalva) */
+.alert-error {
+    background-color: #e74c3c; /* Raudona spalva */
+    color: white;
+}
+
+/* Įspėjimo juostos įspėjimo žinutė (geltona spalva) */
+.alert-warning {
+    background-color: #f39c12; /* Geltona spalva */
+    color: white;
+}
+
+/* Uždaryti mygtukas įspėjimo juostoje */
+.alert .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Uždaryti mygtukas hover efektas */
+.alert .close-btn:hover {
+    transform: scale(1.2); /* Poveikis, kai užveda pelės žymeklį */
+}
