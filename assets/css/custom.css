@@ -1,3 +1,88 @@
+/* ===========================
+   1. FADE-IN SEKCJŲ ANIMACIJA
+   =========================== */
+section {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ==========================================
+   2. SOCIALINIŲ IKONŲ JUDĖJIMO ANIMACIJA
+   ========================================== */
+
+.social-icons img,
+.social-icons i {
+    display: inline-block;
+    margin-right: 10px;
+    animation: floatIcons 2s ease-in-out infinite;
+}
+
+@keyframes floatIcons {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+
+/* ===========================
+   3. PAGE PRE-LOADER SPINNER
+   =========================== */
+
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ebebeb;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+/* ================================================
+   4. PREFERS-REDUCED-MOTION – SUPAPRASTINTOS VERSIJOS
+   ================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    /* išjungti sekcijų animaciją */
+    section {
+        animation: none;
+        opacity: 1;
+    }
+
+    /* socialinių ikonų animaciją išjungti */
+    .social-icons img,
+    .social-icons i {
+        animation: none;
+    }
+
+    /* lėtesnis spinneris arba jokios animacijos */
+    .spinner {
+        animation: spin 3s linear infinite;
+    }
+}
+
 /* Pakeičiam šriftų šeimą visai svetainei */
 body {
     font-family: 'Roboto', sans-serif; /* Galite pasirinkti ir kitą šriftą, pvz., 'Open Sans', 'Lora' ir kt. */
