@@ -816,6 +816,51 @@
 </div>
     </section><!-- /Contact Section -->
 
+      <section id="my-game" class="my-game-section" style="margin-top:40px; padding:24px 12px;">
+  <div class="container">
+    <h2>Mano Žaidimas</h2>
+
+    <!-- Controls -->
+    <div class="game-controls" style="display:flex; gap:12px; align-items:center; margin:12px 0;">
+      <label>
+        <input type="radio" name="difficulty" value="easy" checked> Lengvas (4×3)
+      </label>
+      <label>
+        <input type="radio" name="difficulty" value="hard"> Sunkus (6×4)
+      </label>
+
+      <button id="start-btn" class="btn">Start</button>
+      <button id="reset-btn" class="btn">Atnaujinti</button>
+
+      <div id="stats" style="margin-left:auto; text-align:right;">
+        <div>Ėjimų skaičius: <span id="moves-count">0</span></div>
+        <div>Sutapusių porų: <span id="matches-count">0</span></div>
+      </div>
+    </div>
+
+    <!-- Game board -->
+    <div id="game-board-wrapper" style="display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap;">
+      <div id="game-board" aria-live="polite" style="flex:1 1 640px;"></div>
+
+      <!-- Optional sidebar for extra stats or instructions -->
+      <aside id="game-sidebar" style="width:220px;">
+        <div style="padding:12px; border-radius:8px; background:#f7f7f7;">
+          <h4>Info</h4>
+          <p>Rask visas poras. Jei kortelės nesutampa, jos atsiverčia atgal po ~1s.</p>
+          <div id="win-message" style="display:none; margin-top:12px; padding:10px; border-radius:6px; background:#e6ffe6; color:#0a6b0a; font-weight:700;">Laimėjote!</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  
+</section>
+
+
+
+
+
+
   </main>
 
   <footer id="footer" class="footer">
@@ -902,7 +947,7 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/custom.js"></script>
-
+  <script src="assets/js/custom_game.js"></script>
     <script>
         window.addEventListener("load", function () {
             document.getElementById("preloader").style.display = "none";
